@@ -1,0 +1,64 @@
+.list-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: 2px solid lightgray;
+  border-radius: 4px;
+
+  .issues-container {
+    overflow: auto;
+    overflow-x: hidden;
+    height: 500px;
+  }
+
+  .issue {
+    border: 2px solid lightgray;
+    width: 900px;
+    padding: 10px;
+    margin: 5px 0;
+
+    .about {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .labels {
+        width: 80%;
+        img {
+          margin: 0 8px;
+        }
+
+        h4 {
+          display: inline-block;
+        }
+
+        p {
+          margin-left: 7px !important;
+          padding: 2px;
+          font-size: 13px;
+          border-radius: 10px;
+          margin: 0;
+          display: inline-block;
+          height: 15px;
+        }
+      }
+    }
+
+    .info-below {
+      display: flex;
+      justify-content: space-between;
+      width: 245px;
+
+      p {
+        font-size: 15px;
+        color: #24292e;
+      }
+    }
+
+    h4 {
+      font-size: 16px;
+      margin: 0;
+    }
+  }
+}
